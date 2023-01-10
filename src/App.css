@@ -3,6 +3,7 @@ body {
     color: #293264;
     background-image: url("assets/blob1.png"), url("assets/blob2.png");
     background-position: top right, bottom left;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     height: 100vh;
     display: flex;
