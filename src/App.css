@@ -1,0 +1,150 @@
+body {
+    background-color: #F5F7FB;
+    color: #293264;
+    background-image: url("assets/blob1.png"), url("assets/blob2.png");
+    background-position: top right, bottom left;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0
+}
+
+main {
+    width: 85vw;
+    max-width: 800px;
+}
+
+/* ----------- Start Page ----------- */
+
+.modal{
+    margin-top: 35vh;
+    text-align: center;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.description{
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+}
+
+
+/* ----------- Questions ----------- */
+
+.container{
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;   
+}
+
+h3 {
+    margin: 0;
+}
+
+.question-text {
+   margin-bottom: 1rem;
+}
+
+hr{
+    border: 0.794239px solid #DBDEF0;
+    margin-bottom: 1rem;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+
+/* ----------- Buttons ----------- */
+
+.start-btn,
+.check-btn,
+.check-btn-greyed-out{
+    color: #F5F7FB;
+    background: #4D5B9E;
+    border-radius: 15px;
+    border: none;
+    font-weight: 500;
+    padding: 1rem 2rem;
+}
+
+.check-btn{
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.start-btn:hover, 
+.start-btn:active,
+.check-btn:hover,
+.check-btn:active {
+    translate: 1px 1px;
+    box-shadow: inset 3px 3px 16px 16px #5f6cad;
+}
+
+.check-btn-greyed-out{
+    cursor: not-allowed;
+    opacity: 0.5;
+    margin-left: auto;
+}
+
+
+/* -- Choices -- */
+
+.btn-primary{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 7.94239px;
+    color: #293264;
+    padding: 0.3rem 1rem;
+    margin-right: 0.75rem;
+    margin-bottom: 1rem;
+    border: 0.794239px solid #4D5B9E;
+    background: #F5F7FB;
+    cursor: pointer;
+}
+
+.btn-primary:hover, 
+.btn-primary:active {
+    translate: 1px 1px;
+    box-shadow: inset 3px 3px 16px 16px #D6DBF5;
+}
+
+.btn-selected{
+    background: #D6DBF5;
+    border: none;
+}
+
+.btn-greyed-out,
+.btn-wrong {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-wrong{
+    opacity: 0.5;
+    background: #F8BCBC;
+    border: none;
+    cursor: not-allowed;
+}
+
+.btn-correct{
+    background: #94D7A2;
+    border: none;
+    cursor: not-allowed;
+}
+
+
+@media (max-width: 650px) {
+    .container{
+        padding-top: 30px;
+    }
+}
